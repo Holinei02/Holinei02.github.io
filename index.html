@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Навігаційна панель -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Презентація практики</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">EPAM Practice</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Головна</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Про компанію</a></li>
                     <li class="nav-item"><a class="nav-link" href="#process">Процес</a></li>
@@ -23,43 +27,366 @@
         </div>
     </nav>
 
-    <section id="home" class="p-5">
+    <!-- Головний блок -->
+    <header id="home" class="bg-dark text-white text-center py-5" style="background-image: url('https://www.epam.com/etc.clientlibs/epam/clientlibs/clientlib-site/resources/images/homepage/homepage-hero-1.jpg'); background-size: cover; background-position: center;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Ліва частина: Герб кафедри -->
+            <div>
+                <img src="images/gerb-kafedra.png" alt="Герб кафедри" style="width: 200px; height: auto;">
+            </div>
+            <!-- Центр: Текст -->
+            <div>
+                <h1 class="display-4 fw-bold text-white">Презентація практики</h1>
+                <p class="lead fw-semibold text-white">Досвід, отриманий у компанії EPAM</p>
+                <a href="#about" class="btn btn-primary btn-lg">Дізнатися більше</a>
+            </div>
+            <!-- Права частина: Логотип EPAM -->
+            <div>
+                <img src="images/epam-logo.png" alt="Логотип EPAM" style="width: 200px; height: auto;">
+            </div>
+        </div>
+    </header>
+
+    <!-- Про компанію -->
+    <section id="about" class="py-5">
         <div class="container">
-            <h1>Вітаю на моїй презентації!</h1>
-            <p>Цей сайт створений для демонстрації результатів моєї виробничої практики.</p>
+            <h2 class="text-center mb-4 display-5 fw-bold">Про компанію</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Компанія «ЕПАМ ДІДЖИТАЛ» є одним із лідерів у сфері IT, що надає послуги з розробки, тестування та консалтингу. Практика в такій компанії дозволила мені отримати безцінний досвід роботи в команді професіоналів, ознайомитися з корпоративними стандартами якості та сучасними підходами до організації робочого процесу.</p>
+                    <p>Компанія EPAM має глобальну присутність у понад 30 країнах світу, де працює тисячі фахівців. Вона займається розробкою програмного забезпечення, тестуванням, консалтинговими послугами, а також впровадженням цифрових рішень для клієнтів. Практика у компанії такого рівня дозволила мені ознайомитися з високими стандартами роботи та корпоративною культурою.</p>
+                    <p><strong>Адреса:</strong> 01033, м. Київ, вул. Прахових Сім'ї, буд. 54</p>
+                    <p><strong>Керівник від бази практики:</strong> Шудрик Тетяна Михайлівна</p>
+                    <p><strong>Сайт компанії:</strong> <a href="https://www.epam.com" target="_blank">epam.com</a></p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/epam-office.jpg" alt="Офіс EPAM" class="img-fluid rounded">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="p-5 bg-light">
+    <!-- Процес проходження практики -->
+    <section id="process" class="bg-light py-5">
         <div class="container">
-            <h2>Про компанію</h2>
-            <p><strong>Назва компанії:</strong> ТОВ "ЕПАМ ДІДЖИТАЛ"</p>
-            <p><strong>Адреса:</strong> 01001, м. Київ, вул. Хрещатик, буд. 19</p>
-            <p><strong>Сайт компанії:</strong> <a href="https://www.epam.com" target="_blank">epam.com</a></p>
+            <h2 class="text-center mb-4 display-5 fw-bold">Процес проходження практики</h2>
+            <div class="row">
+                <!-- Ліва частина: Опис -->
+                <div class="col-md-6">
+                    <h4 class="fw-bold mb-3">Основні етапи:</h4>
+                    <ul style="font-size: 1.2em; line-height: 1.8;">
+                        <li><strong>15.03.2025:</strong> Ознайомлення з вимогами до проєкту та документацією.</li>
+                        <li><strong>17.03.2025:</strong> Розробка тест-кейсів для функціонального тестування.</li>
+                        <li><strong>22.03.2025:</strong> Реалізація автоматизованих тестів за допомогою Java та Selenium WebDriver.</li>
+                        <li><strong>26.03.2025:</strong> Інтеграція тестів у CI/CD-процес за допомогою Jenkins.</li>
+                        <li><strong>26.03.2025:</strong> Аналіз результатів тестування. Виявлення дефектів у системі, документування у Jira.</li>
+                        <li><strong>11.04.2025:</strong> Оптимізація тестів, рефакторинг коду та створення звітів.</li>
+                        <li><strong>22.04.2025:</strong> Оформлення звітної документації по практиці.</li>
+                    </ul>
+                </div>
+                <!-- Права частина: Карусель -->
+                <div class="col-md-6">
+                    <div id="processCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/epam-frankivsk.jpg" class="d-block w-100 rounded" alt="Офіс EPAM у Івано-Франківську">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/epam-team.jpg" class="d-block w-100 rounded" alt="Команда EPAM">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/epam-workplace.jpg" class="d-block w-100 rounded" alt="Робоче місце EPAM">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#processCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#processCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="process" class="p-5">
+    <!-- Фінальне завдання -->
+    <section id="project" class="py-5 bg-light">
         <div class="container">
-            <h2>Процес проходження практики</h2>
-            <p>Ознайомлення з вимогами, розробка тестів та інтеграція в CI/CD.</p>
+            <h2 class="text-center mb-4 display-5 fw-bold">Фінальний проект</h2>
+            <h4 class="text-center mb-4 fw-bold">Розробка автоматизованих тестів для веб-додатку "Система управління проектами"</h4>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Етап 1: Функціональні тести -->
+                    <div class="carousel-item active">
+                        <h4 class="fw-bold mb-3">Етап 1: Функціональні тести</h4>
+                        <p>Перевірка на коректність валідації даних, правильність виконання бізнес-логіки, а також поведінку системи у випадках некоректного введення даних.</p>
+                        <!-- Таблиця функціональних тестів -->
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Test Case ID</th>
+                                    <th>Action</th>
+                                    <th>Chrome</th>
+                                    <th>Edge</th>
+                                    <th>Safari</th>
+                                    <th>Comments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC001</td>
+                                    <td>Введення некоректного формату email</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Очікувана поведінка</td>
+                                </tr>
+                                <tr>
+                                    <td>TC002</td>
+                                    <td>Введення порожнього поля "Ім'я"</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Очікувана поведінка</td>
+                                </tr>
+                                <tr>
+                                    <td>TC003</td>
+                                    <td>Введення некоректного формату дати</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Очікувана поведінка</td>
+                                </tr>
+                                <tr>
+                                    <td>TC004</td>
+                                    <td>Введення значення, що перевищує максимальний ліміт</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Помилка валідації</td>
+                                    <td>Очікувана поведінка</td>
+                                </tr>
+                                <tr>
+                                    <td>TC005</td>
+                                    <td>Введення коректних даних</td>
+                                    <td>Успішна операція</td>
+                                    <td>Успішна операція</td>
+                                    <td>Успішна операція</td>
+                                    <td>Очікувана поведінка</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <!-- Етап 2: Наступний елемент каруселі -->
+                    <div class="carousel-item">
+                        <h4 class="fw-bold mb-3">Етап 2: Автоматизовані тести</h4>
+                        <p>Реалізовано автоматизовані тести для перевірки ключових функцій додатку, таких як авторизація, створення та редагування проектів, а також генерація звітів.</p>
+                        <!-- Картинка прикладу роботи -->
+                        <div class="text-center mb-4">
+                            <img src="images/selenium-example.png" alt="Приклад роботи Selenium WebDriver" class="img-fluid rounded" style="width: 150%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                        </div>
+                        <!-- Експандер для коду -->
+                        <div>
+                            <a href="#" id="toggleCode" class="text-primary fw-bold" onclick="toggleCodeBlock(event)">Показати реалізацію тесту -></a>
+                            <pre id="codeBlock" style="display: none; background-color: #f8f9fa; padding: 20px; border-radius: 10px; overflow-x: auto;">
+    import org.openqa.selenium.By;
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.WebElement;
+    import org.openqa.selenium.chrome.ChromeDriver;
+    
+    public class LoginTest {
+        public static void main(String[] args) {
+            // Встановлення драйвера для Chrome
+            System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+            WebDriver driver = new ChromeDriver();
+    
+            try {
+                // Перехід на сторінку авторизації
+                driver.get("https://example.com/login");
+    
+                // Введення логіну
+                WebElement usernameField = driver.findElement(By.id("username"));
+                usernameField.sendKeys("test_user");
+    
+                // Введення паролю
+                WebElement passwordField = driver.findElement(By.id("password"));
+                passwordField.sendKeys("password123");
+    
+                // Натискання кнопки входу
+                WebElement loginButton = driver.findElement(By.id("loginButton"));
+                loginButton.click();
+    
+                // Перевірка результату
+                WebElement successMessage = driver.findElement(By.id("successMessage"));
+                if (successMessage.isDisplayed()) {
+                    System.out.println("Авторизація пройшла успішно!");
+                } else {
+                    System.out.println("Авторизація не вдалася.");
+                }
+            } finally {
+                // Закриття браузера
+                driver.quit();
+            }
+        }
+    }
+                            </pre>
+                        </div>
+                    </div>
+    
+                    <!-- Етап 3: Наступний елемент каруселі -->
+                    <div class="carousel-item">
+                        <h4 class="fw-bold mb-3">Етап 3: Інтеграція у процес CI/CD </h4>
+                        <p>Тести були інтегровані у процес CI/CD за допомогою Jenkins, що дозволило автоматично запускати їх після кожного оновлення коду.</p>
+                        <!-- Картинка прикладу роботи -->
+                        <div class="text-center mb-4">
+                            <img src="images/jenkins-pipeline-flow.gif" alt="Приклад роботи Jenkins" class="img-fluid rounded" style="width: 50%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                        </div>
+                        <!-- Експандер для коду -->
+                        <div>
+                            <a href="#" id="toggleFile" class="text-primary fw-bold" onclick="toggleFileBlock(event)">Показати файл процесу -></a>
+                            <pre id="fileBlock" style="display: none; background-color: #f8f9fa; padding: 20px; border-radius: 10px; overflow-x: auto;">
+                                pipeline {
+                                    agent any
+                                
+                                    environment {
+                                        CHROME_DRIVER_PATH = "/path/to/chromedriver" // Шлях до ChromeDriver
+                                    }
+                                
+                                    stages {
+                                        stage('Checkout') {
+                                            steps {
+                                                // Клонування репозиторію з автотестами
+                                                git branch: 'main', url: 'https://github.com/ваш_репозиторій'
+                                            }
+                                        }
+                                        stage('Install Dependencies') {
+                                            steps {
+                                                // Встановлення необхідних залежностей через Maven
+                                                sh 'mvn clean install'
+                                            }
+                                        }
+                                        stage('Run Tests') {
+                                            steps {
+                                                // Запуск тестів через Maven
+                                                sh 'mvn test'
+                                            }
+                                        }
+                                        stage('Generate Report') {
+                                            steps {
+                                                // Генерація звіту за допомогою Allure
+                                                sh 'mvn allure:serve'
+                                            }
+                                        }
+                                    }
+                                
+                                    post {
+                                        always {
+                                            // Збір артефактів (наприклад, звіти тестів)
+                                            archiveArtifacts artifacts: '**/target/allure-results/**', allowEmptyArchive: true
+                                        }
+                                        success {
+                                            echo 'Тести виконані успішно!'
+                                        }
+                                        failure {
+                                            echo 'Тести завершились помилкою!'
+                                        }
+                                    }
+                                }
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Етап 3: Наступний елемент каруселі -->
+                    <div class="carousel-item">
+                        <h4 class="fw-bold mb-3">Етап 4: Візуалізація результатів тестування  </h4>
+                        <p>Детальні звіти про виконання тестів створені із використанням Allure Report</p>
+                        <!-- Картинка прикладу роботи -->
+                        <div class="text-center mb-4">
+                            <img src="images/allure-example.png" alt="Приклад роботи Allure" class="img-fluid rounded" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                        </div>
+                    </div>                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </section>
-
-    <section id="project" class="p-5 bg-light">
+    <section id="results" class="py-5 bg-light">
         <div class="container">
-            <h2>Фінальне завдання</h2>
-            <p><strong>Назва проєкту:</strong> Система управління проектами</p>
-            <p>Розроблено 50+ автоматизованих тестів.</p>
+            <h2 class="text-center mb-4 display-5 fw-bold">Результати виконання виробничої практики</h2>
+            <div class="text-center">
+                <!-- Блок 1 -->
+                <div id="block1" class="expander-block" onclick="showNextBlock('block2')">
+                    • Розроблено 50+ автоматизованих тестів для функціонального тестування веб-додатку.
+                </div>
+                <!-- Блок 2 -->
+                <div id="block2" class="expander-block" style="display: none;" onclick="showNextBlock('block3')">
+                    • Виявлено та задокументовано 15 дефектів у системі.
+                </div>
+                <!-- Блок 3 -->
+                <div id="block3" class="expander-block" style="display: none;" onclick="showNextBlock('block4')">
+                    • Тести інтегровані в CI/CD-процес, що дозволило автоматизувати перевірку функціоналу при кожному оновленні коду.
+                </div>
+                <!-- Блок 4 -->
+                <div id="block4" class="expander-block" style="display: none;">
+                    Висновок: розроблені автоматизовані тести значно покращили якість перевірки функціоналу веб-додатку та скоротили час на тестування.
+                </div>
+            </div>
         </div>
     </section>
-
-    <section id="contacts" class="p-5">
+    <script>
+        function toggleCodeBlock(event) {
+            event.preventDefault();
+            const codeBlock = document.getElementById('codeBlock');
+            const toggleLink = document.getElementById('toggleCode');
+            if (codeBlock.style.display === 'none') {
+                codeBlock.style.display = 'block';
+                toggleLink.textContent = 'Сховати реалізацію тесту <-';
+            } else {
+                codeBlock.style.display = 'none';
+                toggleLink.textContent = 'Показати реалізацію тесту ->';
+            }
+        }
+    </script>
+    <script>
+        function toggleFileBlock(event) {
+            event.preventDefault();
+            const codeBlock = document.getElementById('fileBlock');
+            const toggleLink = document.getElementById('toggleFile');
+            if (codeBlock.style.display === 'none') {
+                codeBlock.style.display = 'block';
+                toggleLink.textContent = 'Сховати файл процесу <-';
+            } else {
+                codeBlock.style.display = 'none';
+                toggleLink.textContent = 'Показати файл процесу ->';
+            }
+        }
+    </script>
+    <script>
+        function showNextBlock(nextBlockId) {
+            const nextBlock = document.getElementById(nextBlockId);
+            if (nextBlock) {
+                nextBlock.style.display = 'block'; // Відображення наступного блоку
+                nextBlock.scrollIntoView({ behavior: 'smooth' }); // Плавний скрол до блоку
+            }
+        }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Контакти -->
+    <footer id="contacts" class="bg-dark text-white text-center py-4">
         <div class="container">
-            <h2>Контакти</h2>
             <p><strong>Автор:</strong> Голіней Андрій Михайлович</p>
-            <p><strong>E-mail:</strong> andriy.holiney@example.com</p>
+            <p><strong>E-mail:</strong> andriy.holiney@gmail.com</p>
+            <p>© 2025. Всі права захищені.</p>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
